@@ -118,3 +118,6 @@ tide_vi_mode_color_replace 000000
 tide_vi_mode_color_visual 000000
 tide_zig_bg_color F7A41D
 tide_zig_color 000000
+
+tide_gh_user_bg_color 444444
+tide_gh_user_color 5FAFFF
