@@ -91,3 +91,5 @@ tide_vi_mode_color_replace green
 tide_vi_mode_color_visual yellow
 tide_zig_bg_color normal
 tide_zig_color yellow
+tide_gh_user_bg_color normal
+tide_gh_user_color cyan

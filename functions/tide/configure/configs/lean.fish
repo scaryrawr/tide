@@ -118,3 +118,6 @@ tide_vi_mode_color_replace 87AF87
 tide_vi_mode_color_visual FF8700
 tide_zig_bg_color normal
 tide_zig_color F7A41D
+
+tide_gh_user_bg_color 444444
+tide_gh_user_color 5FAFFF

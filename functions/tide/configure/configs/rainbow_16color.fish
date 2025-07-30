@@ -95,3 +95,5 @@ tide_vi_mode_icon_replace R
 tide_vi_mode_icon_visual V
 tide_zig_bg_color yellow
 tide_zig_color black
+tide_gh_user_bg_color blue
+tide_gh_user_color brwhite
