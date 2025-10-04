@@ -21,3 +21,11 @@ _context # CHECK: {{[^@]*@[^@]*}}
 
 set -lx tide_context_hostname_parts 0
 _context # CHECK: {{[^@]*}}
+
+# Test CODESPACE_NAME support
+set -e SSH_TTY
+set EUID (id -u) # Reset to non-root
+set -lx tide_context_always_display true
+set -lx tide_context_hostname_parts 5
+set -lx CODESPACE_NAME fuzzy-umbrella-abcd1234
+_context # CHECK: {{[^@]*@fuzzy-umbrella}}

@@ -9,6 +9,10 @@ function _tide_item_context
         return
     end
 
-    string match -qr "^(?<h>(\.?[^\.]*){0,$tide_context_hostname_parts})" @$hostname
+    if set -q CODESPACE_NAME
+        set -f h @(string replace -r -- '-[^-]*$' '' $CODESPACE_NAME)
+    else
+        string match -qr "^(?<h>(\.?[^\.]*){0,$tide_context_hostname_parts})" @$hostname
+    end
     _tide_print_item context $USER$h
 end
