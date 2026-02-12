@@ -11,8 +11,7 @@
     "ghcr.io/devcontainers/features/rust:1": {},
     "ghcr.io/meaningful-ooo/devcontainer-features/fish:2": {
       "fisher": true
-    },
-
+    }
   },
   "customizations": {
     "vscode": {
