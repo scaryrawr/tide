@@ -12,6 +12,7 @@ tide_distrobox_icon 󰆧
 tide_docker_icon 
 tide_elixir_icon 
 tide_gcloud_icon 󰊭 # Actual google cloud glyph is harder to see
+tide_gh_user_icon 
 tide_git_icon
 tide_go_icon 
 tide_java_icon 
