@@ -17,6 +17,7 @@ make test         # run littlecheck test suite (installs deps, runs tests/*.test
 To run a single test file:
 
 ```sh
+make littlecheck.py
 python3 littlecheck.py tests/_tide_item_node.test.fish
 ```
 
@@ -44,6 +45,7 @@ tests/
 ### Key Concepts
 
 - **Items** are prompt segments (e.g., git status, node version). Each is a function `_tide_item_<name>` in `functions/`.
+- **Directory marker items** check `$_tide_parent_dirs` for project files; the Go item recognizes both `go.mod` and `go.work`.
 - **Async rendering**: `fish_prompt` spawns a background Fish process to compute prompt content, then refreshes on completion.
 - **Configuration wizard**: `tide configure` walks through choices in `functions/tide/configure/choices/` and applies configs from `functions/tide/configure/configs/`.
 

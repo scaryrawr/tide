@@ -60,6 +60,6 @@ python3 littlecheck.py tests/_tide_item_<name>.test.fish
 
 ## Common Patterns
 
-- **Directory-based items** (node, go, python): Create a marker file (e.g., `package.json`, `go.mod`) to trigger the item.
+- **Directory-based items** (node, go, python): Create a marker file (e.g., `package.json`, `go.mod`, `go.work`) to trigger the item.
 - **Command-based items** (docker, kubectl): Mock the command and test output parsing.
 - **Git tests**: Initialize repos with `git init`, create commits, test various states (dirty, staged, stash, etc.).

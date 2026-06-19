@@ -69,5 +69,6 @@ make all
 Or test just the new item:
 
 ```sh
+make littlecheck.py
 python3 littlecheck.py tests/_tide_item_<name>.test.fish
 ```

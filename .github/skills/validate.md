@@ -38,5 +38,6 @@ make all
 
 To test a single item after changes:
 ```sh
+make littlecheck.py
 python3 littlecheck.py tests/_tide_item_<name>.test.fish
 ```
