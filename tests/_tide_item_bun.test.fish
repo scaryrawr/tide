@@ -17,4 +17,8 @@ touch bun.lock
 _bun # CHECK:  1.1.39
 command rm bun.lock
 
+touch bun.lockb
+_bun # CHECK:  1.1.39
+command rm bun.lockb
+
 command rm -r $tmpdir

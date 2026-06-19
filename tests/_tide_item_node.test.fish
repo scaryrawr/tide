@@ -16,4 +16,14 @@ _node # CHECK:
 touch package.json
 _node # CHECK: ⬢ 16.5.0
 
+touch bun.lock
+_node # CHECK:
+command rm bun.lock
+
+touch bun.lockb
+_node # CHECK:
+command rm bun.lockb
+
+_node # CHECK: ⬢ 16.5.0
+
 command rm -r $tmpdir

@@ -18,8 +18,11 @@ To run a single test file:
 
 ```sh
 make littlecheck.py
+fish -c 'type -q mock || fisher install IlanCosman/clownfish'
 python3 littlecheck.py tests/_tide_item_node.test.fish
 ```
+
+Single-file tests load Tide functions from Fish's function path. Run `make install` first when possible, or explicitly put the checkout's `functions/` directory first in `fish_function_path` if local Fish config conflicts prevent installing.
 
 Tests use [littlecheck](https://github.com/ridiculousfish/littlecheck) with `# CHECK:` comments for expected output, and [clownfish](https://github.com/IlanCosman/clownfish) `mock` for stubbing commands.
 

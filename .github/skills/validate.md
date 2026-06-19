@@ -39,5 +39,8 @@ make all
 To test a single item after changes:
 ```sh
 make littlecheck.py
+fish -c 'type -q mock || fisher install IlanCosman/clownfish'
 python3 littlecheck.py tests/_tide_item_<name>.test.fish
 ```
+
+Single-file tests use Fish's function path, so run `make install` first when possible. If local Fish config conflicts prevent installing, run littlecheck with a `%fish` substitution that starts Fish with the checkout's `functions/` directory first in `fish_function_path`.
